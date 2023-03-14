@@ -1,6 +1,6 @@
 {
-  "root": "apps/desk",
-  "sourceRoot": "apps/desk",
+  "root": "apps/vercel-app",
+  "sourceRoot": "apps/vercel-app",
   "projectType": "application",
   "targets": {
     "build": {
@@ -8,8 +8,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/desk",
-        "outputPath": "dist/apps/desk"
+        "root": "apps/vercel-app",
+        "outputPath": "dist/apps/vercel-app"
       },
       "configurations": {
         "production": {}
@@ -18,12 +18,12 @@
     "serve": {
       "executor": "@nrwl/next:server",
       "options": {
-        "buildTarget": "desk:build",
+        "buildTarget": "vercel-app:build",
         "dev": true
       },
       "configurations": {
         "production": {
-          "buildTarget": "desk:build:production",
+          "buildTarget": "vercel-app:build:production",
           "dev": false
         }
       }
@@ -31,22 +31,14 @@
     "export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "desk:build:production"
-      }
-    },
-    "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/desk"],
-      "options": {
-        "jestConfig": "apps/desk/jest.config.js",
-        "passWithNoTests": true
+        "buildTarget": "vercel-app:build:production"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/desk/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/vercel-app/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },

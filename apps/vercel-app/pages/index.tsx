@@ -13,7 +13,7 @@ export function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome desk 👋
+              Welcome vercel-app 👋
             </h1>
           </div>
 

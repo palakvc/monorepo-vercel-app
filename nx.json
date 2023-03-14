@@ -23,7 +23,7 @@
           "test",
           "e2e"
         ],
-        "accessToken": "YjM5NjdiODgtOTBjNy00NDAzLTk1ZDQtZjM3YTNkMWI1NjAyfHJlYWQtd3JpdGU="
+        "accessToken": "OTg4OTBkZWItNjA4MC00ZTMwLWJmMDgtM2MyYTRlN2RhN2JlfHJlYWQtd3JpdGU="
       }
     }
   },
@@ -48,5 +48,5 @@
       }
     }
   },
-  "defaultProject": "desk"
+  "defaultProject": "vercel-app"
 }
